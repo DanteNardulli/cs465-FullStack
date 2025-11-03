@@ -1,0 +1,24 @@
+{
+  "name": "cs465-fullstack",
+  "version": "1.0.0",
+  "description": "cs-465 Full Stack Development with MEAN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanteNardulli/cs465-FullStack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DanteNardulli/cs465-FullStack/issues"
+  },
+  "homepage": "https://github.com/DanteNardulli/cs465-FullStack#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
