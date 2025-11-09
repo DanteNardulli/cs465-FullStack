@@ -1,0 +1,16 @@
+<section class="hero">
+  <h2>{{hero.heading}}</h2>
+  <p>{{hero.subheading}}</p>
+</section>
+
+<section class="featured">
+  <h3>Featured Trips</h3>
+  <ul>
+    {{#each featured}}
+      <li class="trip">
+        <h4>{{this.name}}</h4>
+        <p>Price: {{this.price}} &bull; {{this.days}} days</p>
+      </li>
+    {{/each}}
+  </ul>
+</section>
