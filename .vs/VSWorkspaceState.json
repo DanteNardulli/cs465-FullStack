@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app_server",
+    "\\app_server\\controllers",
+    "\\app_server\\data",
+    "\\app_server\\routes",
+    "\\app_server\\views",
+    "\\app_server\\views\\travelers"
+  ],
+  "SelectedNode": "\\app_server\\data\\trips.json",
+  "PreviewInSolutionExplorer": false
+}

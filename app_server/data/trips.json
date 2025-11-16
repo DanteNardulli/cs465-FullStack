@@ -1,0 +1,28 @@
+{
+  "trips": [
+    {
+      "id": 1,
+      "name": "Santorini, Greece",
+      "price": 1299,
+      "currency": "USD",
+      "days": 5,
+      "summary": "White-washed buildings, blue domes, sunset views."
+    },
+    {
+      "id": 2,
+      "name": "Kyoto, Japan",
+      "price": 1799,
+      "currency": "USD",
+      "days": 7,
+      "summary": "Historic temples, gardens and traditional cuisine."
+    },
+    {
+      "id": 3,
+      "name": "Reykjavík, Iceland",
+      "price": 1499,
+      "currency": "USD",
+      "days": 4,
+      "summary": "Glaciers, hot springs and dramatic landscapes."
+    }
+  ]
+}

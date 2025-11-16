@@ -1,0 +1,17 @@
+<section class="trips-list">
+    <h2>{{title}}</h2>
+    {{#if trips}}
+    <ul>
+        {{#each trips}}
+        <li class="trip">
+            <h3>{{this.name}}</h3>
+            <p>{{this.summary}}</p>
+            <p>Price: {{this.currency}} {{this.price}} — {{this.days}} days</p>
+            <!-- add more markup per wireframe: image, CTA, etc. -->
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>No trips available at the moment.</p>
+    {{/if}}
+</section>
