@@ -1,3 +1,4 @@
+const Trip = require('../models/Trip');
 const fs = require('fs');
 const path = require('path');
 
@@ -11,29 +12,32 @@ class TravelerController {
                 subheading: 'Search, compare, and book the best trips.'
             }
         };
-        res.render('travelers/index', model);
+        res.render('travelers/index', { title: 'Travlr — Explore the World' })
     }
 
     // New: render trips list from JSON
-    static getTrips(req, res) {
-        const dataPath = path.join(__dirname, '..', 'data', 'trips.json');
-        fs.readFile(dataPath, 'utf8', (err, jsonString) => {
-            if (err) {
-                console.error('Error reading trips.json:', err);
-                return res.status(500).send('Server error reading trips data.');
-            }
-            try {
-                const data = JSON.parse(jsonString);
-                // pass trips array to the HBS view
-                res.render('travelers/trips', {
-                    title: 'Available Trips',
-                    trips: data.trips
-                });
-            } catch (parseErr) {
-                console.error('Error parsing trips.json:', parseErr);
-                return res.status(500).send('Server error parsing trips data.');
-            }
-        });
+    static async getTrips(req, res) {
+        try {
+            const trips = await Trip.find({}).sort({ price: 1 }).lean();
+            res.render('travelers/trips', {
+                title: 'Available Trips',
+                trips
+            });
+        } catch (err) {
+            console.error('Error fetching trips from DB:', err);
+            res.status(500).send('Server error retrieving trips.');
+        }
+    }
+
+    // Optional: expose JSON API
+    static async apiTrips(req, res) {
+        try {
+            const trips = await Trip.find({}).lean();
+            res.json({ trips });
+        } catch (err) {
+            console.error(err);
+            res.status(500).json({ error: 'Server error' });
+        }
     }
 }
 
