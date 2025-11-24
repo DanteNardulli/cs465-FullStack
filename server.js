@@ -1,9 +1,15 @@
+// server.js
+require('dotenv').config(); // load .env variables
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 
+const { connectDB } = require('./app_server/config/db');
+const travelerRoutes = require('./app_server/routes/travelerRoutes');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/travlr';
 
 // Handlebars setup
 app.engine('hbs', exphbs.engine({
@@ -15,14 +21,23 @@ app.engine('hbs', exphbs.engine({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 
-// Register routes
-const travelerRoutes = require('./app_server/routes/travelerRoutes');
-app.use('/', travelerRoutes);
-
-// Serve static files
+// Static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// start server
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-});
+// Register routes
+app.use('/', travelerRoutes);
+
+// Connect to MongoDB and start server
+(async () => {
+    try {
+        await connectDB(MONGO_URI); // connect to database
+        console.log('Connected to MongoDB');
+
+        app.listen(PORT, () => {
+            console.log(`Server running at http://localhost:${PORT}`);
+        });
+    } catch (err) {
+        console.error('Failed to connect to MongoDB:', err);
+        process.exit(1);
+    }
+})();
