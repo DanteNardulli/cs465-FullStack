@@ -1,28 +1,34 @@
 {
   "trips": [
     {
-      "id": 1,
+      "code": "GR001",
       "name": "Santorini, Greece",
-      "price": 1299,
-      "currency": "USD",
-      "days": 5,
-      "summary": "White-washed buildings, blue domes, sunset views."
+      "length": 5,
+      "start": "2025-06-01",
+      "resort": "Santorini Beach",
+      "perPerson": 1299,
+      "image": "santorini.jpg",
+      "description": "Beautiful Greek island vacation"
     },
     {
-      "id": 2,
+      "code": "JP002",
       "name": "Kyoto, Japan",
-      "price": 1799,
-      "currency": "USD",
-      "days": 7,
-      "summary": "Historic temples, gardens and traditional cuisine."
+      "length": 7,
+      "start": "2025-07-10",
+      "resort": "Kyoto Temple Hotel",
+      "perPerson": 1799,
+      "image": "kyoto.jpg",
+      "description": "Explore Japan’s temples and gardens"
     },
     {
-      "id": 3,
+      "code": "IC003",
       "name": "Reykjavík, Iceland",
-      "price": 1499,
-      "currency": "USD",
-      "days": 4,
-      "summary": "Glaciers, hot springs and dramatic landscapes."
+      "length": 4,
+      "start": "2025-08-05",
+      "resort": "Reykjavík Center Inn",
+      "perPerson": 1499,
+      "image": "iceland.jpg",
+      "description": "Adventure in Iceland’s natural wonders"
     }
   ]
 }
