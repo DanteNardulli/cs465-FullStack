@@ -6,6 +6,8 @@ const exphbs = require('express-handlebars');
 
 const { connectDB } = require('./app_server/config/db');
 const travelerRoutes = require('./app_server/routes/travelerRoutes');
+const apiRouter = require('./app_api/routes/index');
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -26,6 +28,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register routes
 app.use('/', travelerRoutes);
+
+//API Routes
+app.use('/api', apiRouter);
+
 
 // Connect to MongoDB and start server
 (async () => {
