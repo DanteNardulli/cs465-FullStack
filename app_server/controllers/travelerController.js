@@ -1,4 +1,3 @@
-const Trip = require('../models/Trip');
 const fs = require('fs');
 const path = require('path');
 

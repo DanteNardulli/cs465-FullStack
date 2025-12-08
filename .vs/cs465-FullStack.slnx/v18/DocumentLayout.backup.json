@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_api\\controllers\\trips.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_api\\controllers\\trips.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_server\\controllers\\travelerController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\controllers\\travelerController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_server\\routes\\travelerRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\routes\\travelerRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_api\\models\\trips.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_api\\models\\trips.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\.env",
-              "RelativeDocumentMoniker": ".env",
-              "ToolTip": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\.env",
-              "RelativeToolTip": ".env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-01T01:32:09.263Z",
+              "DocumentIndex": 2,
+              "Title": "travelerRoutes.js",
+              "DocumentMoniker": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_server\\routes\\travelerRoutes.js",
+              "RelativeDocumentMoniker": "app_server\\routes\\travelerRoutes.js",
+              "ToolTip": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_server\\routes\\travelerRoutes.js",
+              "RelativeToolTip": "app_server\\routes\\travelerRoutes.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-08T02:50:33.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "travelerController.js",
+              "DocumentMoniker": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_server\\controllers\\travelerController.js",
+              "RelativeDocumentMoniker": "app_server\\controllers\\travelerController.js",
+              "ToolTip": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_server\\controllers\\travelerController.js",
+              "RelativeToolTip": "app_server\\controllers\\travelerController.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-08T02:49:46.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "trips.js",
               "DocumentMoniker": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_api\\controllers\\trips.js",
               "RelativeDocumentMoniker": "app_api\\controllers\\trips.js",
               "ToolTip": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_api\\controllers\\trips.js",
               "RelativeToolTip": "app_api\\controllers\\trips.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-12-01T01:31:18.274Z",
+              "WhenOpened": "2025-12-08T02:47:26.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "trips.js",
+              "DocumentMoniker": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_api\\models\\trips.js",
+              "RelativeDocumentMoniker": "app_api\\models\\trips.js",
+              "ToolTip": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\app_api\\models\\trips.js",
+              "RelativeToolTip": "app_api\\models\\trips.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-08T02:36:03.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\server.js",
+              "RelativeDocumentMoniker": "server.js",
+              "ToolTip": "C:\\Users\\dante\\Downloads\\Nardulli_Mod3\\cs465-FullStack\\server.js",
+              "RelativeToolTip": "server.js",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-08T02:03:02.919Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,22 @@
+<h2>Trips</h2>
+
+<!-- CARD LISTING -->
+<div *ngFor="let trip of trips">
+  <app-trip-card [trip]="trip"
+                 (edit)="onSelectTrip(trip)"
+                 (deleted)="onTripDeleted($event)">
+  </app-trip-card>
+</div>
+
+<hr>
+
+<h3>Add New Trip</h3>
+<app-trip-add (added)="onTripAdded($event)"></app-trip-add>
+
+<hr>
+
+<h3 *ngIf="selectedTrip">Edit Trip</h3>
+<app-trip-edit *ngIf="selectedTrip"
+               [trip]="selectedTrip"
+               (updated)="onTripUpdated($event)">
+</app-trip-edit>

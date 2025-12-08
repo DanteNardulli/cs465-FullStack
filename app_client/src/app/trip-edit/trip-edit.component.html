@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" #editForm="ngForm">
+  <label>Name: <input [(ngModel)]="trip.name" name="name" required></label><br>
+  <label>Length: <input type="number" [(ngModel)]="trip.length" name="length" required></label><br>
+  <label>Start: <input type="date" [(ngModel)]="trip.start" name="start" required></label><br>
+  <label>Resort: <input [(ngModel)]="trip.resort" name="resort" required></label><br>
+  <label>Per Person: <input type="number" [(ngModel)]="trip.perPerson" name="perPerson" required></label><br>
+  <label>Description: <textarea [(ngModel)]="trip.description" name="description"></textarea></label><br>
+  <button type="submit" [disabled]="editForm.invalid">Save Changes</button>
+</form>

@@ -1,0 +1,8 @@
+<div class="trip-card">
+  <h3>{{ trip.name }}</h3>
+  <p>{{ trip.description }}</p>
+  <p>{{ trip.length }} days — ${{ trip.perPerson }}</p>
+
+  <button (click)="onEdit()">Edit</button>
+  <button (click)="onDelete()">Delete</button>
+</div>
