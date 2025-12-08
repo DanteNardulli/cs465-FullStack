@@ -1,7 +1,8 @@
-// server.js
+﻿// server.js
 require('dotenv').config(); // load .env variables
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const exphbs = require('express-handlebars');
 
 const { connectDB } = require('./app_server/config/db');
@@ -12,6 +13,12 @@ const apiRouter = require('./app_api/routes/index');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/travlr';
+
+// Enable CORS (Angular SPA → API)
+app.use(cors());
+
+// JSON body parser
+app.use(express.json());
 
 // Handlebars setup
 app.engine('hbs', exphbs.engine({

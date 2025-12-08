@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app_api",
+    "\\app_api\\controllers",
     "\\app_api\\routes",
+    "\\app_client",
+    "\\app_client\\src",
+    "\\app_client\\src\\app",
     "\\app_server",
-    "\\app_server\\config",
     "\\app_server\\controllers",
-    "\\app_server\\data",
-    "\\app_server\\models",
-    "\\app_server\\routes",
-    "\\public"
+    "\\app_server\\routes"
   ],
-  "SelectedNode": "\\app_server\\config\\db.js",
+  "SelectedNode": "\\app_server\\routes\\travelerRoutes.js",
   "PreviewInSolutionExplorer": false
 }

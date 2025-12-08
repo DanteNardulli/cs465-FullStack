@@ -1,0 +1,46 @@
+<form #addForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+
+
+  <p><strong>Form valid?</strong> {{ addForm.valid }}</p>
+
+  <label>
+    Code:
+    <input type="text" name="code" [(ngModel)]="trip.code" required />
+  </label><br>
+
+  <label>
+    Name:
+    <input type="text" name="name" [(ngModel)]="trip.name" required />
+  </label><br>
+
+  <label>
+    Length:
+    <input type="number" name="length" [(ngModel)]="trip.length" required min="1" />
+  </label><br>
+
+  <label>
+    Start:
+    <input type="date" name="start" [(ngModel)]="trip.start" required />
+  </label><br>
+
+  <label>
+    Resort:
+    <input type="text" name="resort" [(ngModel)]="trip.resort" required />
+  </label><br>
+
+  <label>
+    Per Person:
+    <input type="number" name="perPerson" [(ngModel)]="trip.perPerson" required min="1" />
+  </label><br>
+
+  <label>
+    Description:
+    <textarea name="description" [(ngModel)]="trip.description"></textarea>
+  </label><br>
+
+  <button type="submit">
+    Add Trip
+  </button>
+
+
+</form>
